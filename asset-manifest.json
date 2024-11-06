@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/personal-portfolio/static/css/main.22c39401.css",
+    "main.js": "/personal-portfolio/static/js/main.ec22897b.js",
+    "static/media/PhotoshopPreview_Image_2024-11-05.png": "/personal-portfolio/static/media/PhotoshopPreview_Image_2024-11-05.2fd3f7c9ac95fdd4dcd2.png",
+    "static/media/TicTacToe.png": "/personal-portfolio/static/media/TicTacToe.87711b7842489abfe184.png",
+    "static/media/reactWeather.jpg": "/personal-portfolio/static/media/reactWeather.a1988356c4f5a620716e.jpg",
+    "static/media/oop_project.jpg": "/personal-portfolio/static/media/oop_project.eac2e555845bea7d9ce8.jpg",
+    "static/media/graphql.png": "/personal-portfolio/static/media/graphql.fc6b9451733c620ceb86.png",
+    "static/media/reactSmooth.jpg": "/personal-portfolio/static/media/reactSmooth.a2ffb0a8d6db6a651603.jpg",
+    "static/media/navbar.jpg": "/personal-portfolio/static/media/navbar.7ce4ddd4bd6a2fa48cd5.jpg",
+    "static/media/react.png": "/personal-portfolio/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/nextjs.png": "/personal-portfolio/static/media/nextjs.48ddc8121a0fcb543d64.png",
+    "static/media/github.png": "/personal-portfolio/static/media/github.3b9e32903aa89111875d.png",
+    "static/media/html.png": "/personal-portfolio/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/tailwind.png": "/personal-portfolio/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/css.png": "/personal-portfolio/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/javascript.png": "/personal-portfolio/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "index.html": "/personal-portfolio/index.html",
+    "main.22c39401.css.map": "/personal-portfolio/static/css/main.22c39401.css.map",
+    "main.ec22897b.js.map": "/personal-portfolio/static/js/main.ec22897b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22c39401.css",
+    "static/js/main.ec22897b.js"
+  ]
+}
