@@ -1,7 +1,7 @@
 
 # 🌐 My Portfolio
 
-[Personal-website](https://your-live-site-url.com)
+[Personal-website](https://hbui2003.github.io/)
 
 ##  Project Overview
 This project is a personal portfolio website designed to showcase my skills, projects, and experience in a modern format. Built with **React** and styled using **Tailwind CSS**, the portfolio is fully responsive and features smooth navigation, a toggle for day-night themes, and an interactive projects section. It’s deployed via **GitHub Pages** for easy access.
