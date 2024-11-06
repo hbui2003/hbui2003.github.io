@@ -4,10 +4,10 @@
 [Personal-website](https://hbui2003.github.io) - https://hbui2003.github.io
 
 ##  Project Overview
-This project is a personal portfolio website designed to showcase my skills, projects, and experience in a modern format. Built with **React** and styled using **Tailwind CSS**, the portfolio is fully responsive and features smooth navigation, a toggle for day-night themes, and an interactive projects section. It’s deployed via **GitHub Pages** for easy access.
+This project is a personal portfolio website designed to showcase my skills, projects, and experience in a modern format. Built with **React** and styled using **Tailwind CSS**, the portfolio is fully responsive and features smooth navigation, and an interactive projects section. It’s deployed via **GitHub Pages** for easy access.
 
 ##  Features
-- **Interactive Projects Section**: A gallery of my projects, each with a brief description and links to GitHub repositories.
+- **Interactive Projects Section**: Some of my recent works with a brief description and links to GitHub repositories.
 - **Responsive Design**: Optimized for desktop, tablet, and mobile viewing.
 - **Smooth Scrolling Navigation**: Easily navigate between different sections.
 
