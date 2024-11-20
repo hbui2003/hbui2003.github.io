@@ -5,7 +5,7 @@ import HomePage from "./components/HomePage";
 import NavBar from "./components/NavBar";
 import Project from "./components/Project";
 import SocialLinks from "./components/SocialLinks";
-
+import Footer from "./components/Footer";
 function App() {
   return (
     <div>
@@ -16,6 +16,7 @@ function App() {
       <Experience />
       <Contact />
       <SocialLinks />
+      <Footer />
     </div>
   );
 }
