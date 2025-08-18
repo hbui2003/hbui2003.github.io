@@ -1,171 +1,125 @@
-import React from 'react';
-import HuyImage from '../assets/PhotoshopPreview_Image_2024-11-05.png';
+import React from "react";
+import HuyImage from "../assets/PhotoshopPreview_Image_2024-11-05.png";
 import { TiArrowRightOutline } from "react-icons/ti";
-import { Link } from 'react-scroll';
-import { ReactTyped } from 'react-typed'; // Import correctly
+import { Link } from "react-scroll";
+import { ReactTyped } from "react-typed";
+import { motion } from "framer-motion";
 
 const HomePage = () => {
   return (
-    <div name='Home' className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 pt-16 md:pt-16'>
-      <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
-        <div className='flex flex-col justify-center h-full md:w-1/2'>
-          {/* Greeting Text */}
-          <h1 className='text-3xl sm:text-4xl font-bold text-white'>Hello, it's me</h1>
+    <section
+      name="Home"
+      className="h-screen w-full bg-gradient-to-b from-gray-900 via-black to-gray-900 pt-20 flex items-center"
+    >
+      <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12">
+        {/* Left: Text */}
+        <motion.div
+          initial={{ opacity: 0, x: -70 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col justify-center md:w-1/2"
+        >
+          {/* Greeting */}
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="text-2xl sm:text-3xl font-semibold text-gray-300"
+          >
+            👋 Hello, it&apos;s me
+          </motion.h1>
 
           {/* Name */}
-          <h2 className='text-5xl sm:text-7xl font-bold text-white'>Huy Bui</h2>
+          <motion.h2
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.4 }}
+            className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 mt-2"
+          >
+            Huy Bui
+          </motion.h2>
 
-          {/* Typing Animation */} 
-          <div className='text-white py-5 text-5xl'>
-            <span className='mr-2'>I'm a</span> {/* Static white text */}
+          {/* Typing Animation */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.6 }}
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-white py-4"
+          >
+            <span className="mr-2">I&apos;m a</span>
             <ReactTyped
               strings={[
                 "UI/UX Designer",
                 "Web Designer",
                 "Data Analyst",
-                "Content Creator"
+                "Content Creator",
               ]}
-              typeSpeed={50}
-              backSpeed={30}
+              typeSpeed={60}
+              backSpeed={40}
               loop
-              className='font-bold glow-effect'
-            /> 
-          </div>
-          <h2 className='text-gray-400 py-4 '>I am Huy Bui, a dedicated and ambitious Computer Science student. With a solid foundation in programming, mathematics, and software engineering, I bring a passion for solving complex problems and a commitment to delivering efficient and innovative solutions. </h2>
+              className="bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text"
+            />
+          </motion.div>
+
+          {/* Subtitle */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.8 }}
+            className="text-gray-400 text-lg mt-4 leading-relaxed"
+          >
+            I am <span className="text-cyan-400 font-semibold">Huy Bui</span>, a
+            dedicated and ambitious{" "}
+            <span className="text-blue-400 font-semibold">
+              Computer Science student
+            </span>
+            . With a strong foundation in programming, mathematics, and software
+            engineering, I&apos;m passionate about solving complex problems and
+            delivering efficient, innovative solutions.
+          </motion.p>
 
           {/* Projects Button */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+            className="mt-6"
+          >
             <Link
-              to='Projects'
+              to="About"
               smooth
               duration={500}
               offset={-80}
-              className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'
+              className="group text-white px-6 py-3 flex items-center w-fit rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer shadow-lg hover:shadow-cyan-400/50 hover:scale-105 transition"
             >
-              Projects
-              <span className='group-hover:rotate-90 duration-300'>
-                <TiArrowRightOutline size={20} className='ml-1' />
+              About Me
+              <span className="group-hover:rotate-90 duration-300 ml-1">
+                <TiArrowRightOutline size={22} />
               </span>
             </Link>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        {/* Profile Image */}
-        <div className='mt-8 md:mt-0 md:w-1/2 md:ml-10'>
-          <img
-            src={HuyImage}
-            alt='my profile'
-            className='rounded-full mx-auto w-2/3 md:w-3/4 border-4 border-cyan-500 shadow-lg'
-            style={{
-              boxShadow: '0 0 20px 5px rgba(0, 255, 255, 0.6)',
-            }}
-          />
-        </div>
+        {/* Right: Profile Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          className="mt-10 md:mt-0 md:w-1/2 flex justify-center"
+        >
+          <div className="relative group">
+            {/* Glow Circle */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 blur-3xl opacity-30 group-hover:opacity-50 transition"></div>
+            <img
+              src={HuyImage}
+              alt="profile"
+              className="rounded-full w-64 md:w-80 border-4 border-cyan-500 shadow-xl relative z-10 transform group-hover:scale-110 transition duration-500"
+            />
+          </div>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default HomePage;
-
-
-
-// code with animation appear
-// import React from 'react';
-// import HuyImage from '../assets/PhotoshopPreview_Image_2024-11-05.png';
-// import { TiArrowRightOutline } from "react-icons/ti";
-// import { Link } from 'react-scroll';
-// import { ReactTyped } from 'react-typed'; // Import correctly
-// import { motion } from 'framer-motion';
-
-// const HomePage = () => {
-//   return (
-//     <div name='Home' className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 pt-16 md:pt-16'>
-//       <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
-//         <motion.div
-//           className='flex flex-col justify-center h-full md:w-1/2'
-//           initial={{ opacity: 0, x: -100 }}
-//           animate={{ opacity: 1, x: 0 }}
-//           transition={{ duration: 1 }}
-//         >
-//           {/* Greeting Text */}
-//           <motion.h1
-//             className='text-3xl sm:text-4xl font-bold text-white'
-//             initial={{ opacity: 0, x: -50 }}
-//             animate={{ opacity: 1, x: 0 }}
-//             transition={{ delay: 0.2, duration: 0.8 }}
-//           >
-//             Hello, it's me
-//           </motion.h1>
-
-//           {/* Name */}
-//           <motion.h2
-//             className='text-5xl sm:text-7xl font-bold text-white'
-//             initial={{ opacity: 0, x: -50 }}
-//             animate={{ opacity: 1, x: 0 }}
-//             transition={{ delay: 0.4, duration: 0.8 }}
-//           >
-//             Huy Bui
-//           </motion.h2>
-
-//           {/* Typing Animation */}
-//           <div className='text-white py-5 text-5xl'>
-//             <span className='mr-2'>I'm a</span> {/* Static white text */}
-//             <ReactTyped
-//               strings={[
-//                 "UI/UX Designer",
-//                 "Web Designer",
-//                 "Data Analyst",
-//                 "Content Creator"
-//               ]}
-//               typeSpeed={50}
-//               backSpeed={30}
-//               loop
-//               className='font-bold glow-effect'
-//             /> 
-//           </div>
-//           <h2 className='text-gray-400 py-4 '>I am Huy Bui, a dedicated and ambitious Computer Science student. With a solid foundation in programming, mathematics, and software engineering, I bring a passion for solving complex problems and a commitment to delivering efficient and innovative solutions. </h2>
-
-//           {/* Projects Button */}
-//           <motion.div
-//             initial={{ opacity: 0, y: 50 }}
-//             animate={{ opacity: 1, y: 0 }}
-//             transition={{ delay: 0.6, duration: 0.4 }}
-//           >
-//             <Link
-//               to='Projects'
-//               smooth
-//               duration={500}
-//               offset={-80}
-//               className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'
-//             >
-//               Projects
-//               <span className='group-hover:rotate-90 duration-300'>
-//                 <TiArrowRightOutline size={20} className='ml-1' />
-//               </span>
-//             </Link>
-//           </motion.div>
-//         </motion.div>
-
-//         {/* Profile Image */}
-//         <motion.div
-//           className='mt-8 md:mt-0 md:w-1/2 md:ml-10'
-//           initial={{ opacity: 0, x: 100 }}
-//           animate={{ opacity: 1, x: 0 }}
-//           transition={{ duration: 1 }}
-//         >
-//           <img
-//             src={HuyImage}
-//             alt='my profile'
-//             className='rounded-full mx-auto w-2/3 md:w-3/4 border-4 border-cyan-500 shadow-lg'
-//             style={{
-//               boxShadow: '0 0 20px 5px rgba(0, 255, 255, 0.6)',
-//             }}
-//           />
-//         </motion.div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default HomePage;
