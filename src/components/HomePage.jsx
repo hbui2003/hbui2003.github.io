@@ -49,10 +49,11 @@ const HomePage = () => {
             <span className="mr-2">I&apos;m a</span>
             <ReactTyped
               strings={[
-                "UI/UX Designer",
-                "Web Designer",
-                "Data Analyst",
-                "Content Creator",
+                "Software Development",
+                "AI Engineer",
+                "Data Engineer",
+                "Web Development",
+                ,
               ]}
               typeSpeed={60}
               backSpeed={40}
