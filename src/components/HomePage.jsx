@@ -53,7 +53,6 @@ const HomePage = () => {
                 "AI Engineer",
                 "Data Engineer",
                 "Web Development",
-                ,
               ]}
               typeSpeed={60}
               backSpeed={40}
