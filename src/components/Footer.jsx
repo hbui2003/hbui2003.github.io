@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa'; // Import icons
+import React from "react";
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa"; // Import icons
 
 function Footer() {
   return (
@@ -7,7 +7,9 @@ function Footer() {
       {/* Container */}
       <div className="container mx-auto flex flex-col items-center">
         {/* Footer Text */}
-        <p className="text-lg font-semibold">&copy; 2024 Huy Bui. All rights reserved.</p>
+        <p className="text-lg font-semibold">
+          Copyright &copy; 2026 Huy Bui. All rights reserved.
+        </p>
         {/* Social Icons */}
         <div className="flex mt-4 space-x-6">
           {/* GitHub */}
@@ -30,7 +32,6 @@ function Footer() {
           >
             <FaLinkedin size={28} />
           </a>
-
 
           {/* Facebook */}
           <a

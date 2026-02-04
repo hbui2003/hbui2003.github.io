@@ -4,7 +4,7 @@ import Experience from "./components/Experience";
 import HomePage from "./components/HomePage";
 import NavBar from "./components/NavBar";
 import Project from "./components/Project";
-import SocialLinks from "./components/SocialLinks";
+//import SocialLinks from "./components/SocialLinks";
 import Footer from "./components/Footer";
 import WorkExperience from "./components/WorkExperience";
 
@@ -18,7 +18,7 @@ function App() {
       <Project />
       <Experience />
       <Contact />
-      <SocialLinks />
+      {/* <SocialLinks /> */}
       <Footer />
     </div>
   );

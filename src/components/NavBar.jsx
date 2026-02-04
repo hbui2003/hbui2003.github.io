@@ -8,14 +8,14 @@ const NavBar = () => {
   const links = [
     { id: 1, link: "Home" },
     { id: 2, link: "About" },
-    { id: 3, link: "Projects" },
-    { id: 4, link: "Experience" },
-    { id: 5, link: "WorkExperience" },
+    { id: 3, link: "WorkExperience" },
+    { id: 4, link: "Projects" },
+    { id: 5, link: "Experience" },
     { id: 6, link: "Contact" },
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed z-50">
       <div>
         <h1 className="text-5xl font-signature ml-5">Huy Bui</h1>
       </div>
